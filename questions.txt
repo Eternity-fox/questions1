@@ -1,0 +1,4560 @@
+题目：Python 文件的扩展名是什么？（第1题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第2题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第3题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第4题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第5题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第6题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第7题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第8题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第9题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第10题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第11题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第12题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第13题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第14题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第15题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第16题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第17题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第18题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第19题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第20题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第21题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第22题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第23题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第24题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第25题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第26题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第27题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第28题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第29题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第30题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第31题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第32题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第33题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第34题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第35题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第36题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第37题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第38题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第39题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第40题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第41题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第42题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第43题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第44题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第45题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第46题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第47题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第48题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第49题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第50题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第51题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第52题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第53题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第54题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第55题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第56题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第57题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第58题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第59题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第60题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第61题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第62题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第63题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第64题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第65题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第66题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第67题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第68题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第69题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第70题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第71题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第72题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第73题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第74题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第75题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第76题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第77题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第78题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第79题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第80题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第81题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第82题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第83题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第84题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第85题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第86题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第87题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第88题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第89题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第90题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第91题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第92题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第93题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第94题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第95题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第96题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第97题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第98题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第99题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第100题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第101题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第102题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第103题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第104题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第105题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第106题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第107题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第108题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第109题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第110题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第111题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第112题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第113题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第114题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第115题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第116题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第117题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第118题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第119题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第120题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第121题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第122题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第123题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第124题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第125题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第126题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第127题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第128题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第129题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第130题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第131题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第132题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第133题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第134题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第135题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第136题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第137题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第138题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第139题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第140题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第141题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第142题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第143题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第144题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第145题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第146题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第147题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第148题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第149题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第150题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第151题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第152题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第153题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第154题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第155题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第156题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第157题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第158题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第159题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第160题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第161题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第162题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第163题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第164题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第165题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第166题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第167题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第168题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第169题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第170题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第171题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第172题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第173题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第174题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第175题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第176题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第177题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第178题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第179题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第180题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第181题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第182题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第183题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第184题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第185题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第186题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第187题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第188题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第189题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第190题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第191题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第192题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第193题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第194题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第195题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
+题目：Python 文件的扩展名是什么？（第196题）
+选项A：.java
+选项B：.py
+选项C：.cpp
+选项D：.html
+答案：B
+解析：Python 文件默认使用 .py 作为扩展名。
+
+相关知识拓展：
+1. Python 程序通常保存为 xxx.py
+2. 运行方式：
+   python 文件名.py
+
+示例：
+print("Hello World")
+
+常见扩展名：
+.py      Python源代码
+.pyc     编译后的字节码文件
+.ipynb   Jupyter Notebook 文件
+
+题目：用于输出内容的函数是什么？（第197题）
+选项A：input()
+选项B：print()
+选项C：open()
+选项D：len()
+答案：B
+解析：print() 用于在控制台输出内容。
+
+函数语法：
+print(内容)
+
+多个内容输出：
+print(a,b,c)
+
+换行与结束符：
+print("hello", end="")
+
+格式化输出：
+name = "Tom"
+print(f"你好 {name}")
+
+常见用途：
+1. 调试程序
+2. 输出变量
+3. 显示结果
+
+题目：获取用户输入使用哪个函数？（第198题）
+选项A：scan()
+选项B：write()
+选项C：input()
+选项D：read()
+答案：C
+解析：input() 用于获取用户输入。
+
+函数语法：
+input("提示内容")
+
+示例：
+name = input("请输入姓名：")
+
+注意：
+1. input() 返回值永远是字符串
+2. 若需要数字需转换
+
+例如：
+age = int(input("请输入年龄"))
+
+题目：创建函数使用哪个关键字？（第199题）
+选项A：class
+选项B：import
+选项C：def
+选项D：lambda
+答案：C
+解析：def 用于定义函数。
+
+基本语法：
+def 函数名():
+    代码
+
+带参数：
+def add(a,b):
+    return a+b
+
+调用函数：
+add(1,2)
+
+函数作用：
+1. 代码复用
+2. 降低重复代码
+3. 提高维护性
+
+题目：向列表末尾添加元素的方法是什么？（第200题）
+选项A：insert()
+选项B：append()
+选项C：add()
+选项D：push()
+答案：B
+解析：append() 用于向列表末尾添加元素。
+
+语法：
+列表.append(元素)
+
+示例：
+nums = [1,2]
+nums.append(3)
+
+结果：
+[1,2,3]
+
+相关方法：
+insert(index,obj)  插入元素
+extend(iterable)   扩展列表
+
