@@ -1,4560 +1,1605 @@
-题目：Python 文件的扩展名是什么？（第1题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
+题目：第1题  第1章 初识Python：print() 函数最基本的作用是什么？
+选项A：从键盘接收用户输入
+选项B：在控制台输出内容
+选项C：定义一个新的变量类型
+选项D：创建一个 Python 文件
 答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
+解析：print() 是 Python 的内置输出函数，基本语法为 print(输出内容)。输出内容可以是数字、字符串、变量，也可以是表达式，例如 print(3+2) 会先计算表达式再输出 5。
 
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
+题目：第2题  第1章 初识Python：Python 源程序文件最常见的扩展名是？
+选项A：.py
+选项B：.txt
+选项C：.docx
+选项D：.exe
+答案：A
+解析：Python 脚本文件通常使用 .py 作为扩展名，例如 main.py、test.py。扩展名可以帮助编辑器和解释器识别这是 Python 源代码文件。
 
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第2题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
+题目：第3题  第1章 初识Python：在 IDLE 的 Python 文件窗口中，通常按哪个快捷键运行程序？
+选项A：F1
+选项B：F5
+选项C：Ctrl+Z
+选项D：Alt+3
 答案：B
-解析：print() 用于在控制台输出内容。
+解析：在 IDLE 中，F5 常用于运行当前 Python 文件。F1 通常用于打开帮助文档，Ctrl+Z 用于撤销，Alt+3 用于注释代码块。
 
-函数语法：
-print(内容)
+题目：第4题  第1章 初识Python：print('Hello\nPython') 中的 \n 表示什么？
+选项A：制表符
+选项B：换行符
+选项C：一个反斜杠
+选项D：空字符
+答案：B
+解析：\n 是转义字符，表示换行。执行 print('Hello\nPython') 时，Hello 和 Python 会显示在两行。字符串中的特殊字符常用反斜杠进行转义。
 
-多个内容输出：
-print(a,b,c)
+题目：第5题  第1章 初识Python：以下哪一项可以直接作为 print() 的输出内容？
+选项A：数字
+选项B：字符串
+选项C：表达式
+选项D：以上都可以
+答案：D
+解析：print() 的输出内容很灵活，可以是数字，如 print(9)；可以是字符串，如 print('Python')；也可以是表达式，如 print(2*5)，表达式会先计算再输出结果。
 
-换行与结束符：
-print("hello", end="")
+题目：第6题  第2章 Python语言基础：int(x) 的主要作用是什么？
+选项A：将 x 转为字符串
+选项B：将 x 转为整数
+选项C：将 x 转为列表
+选项D：将 x 转为布尔值
+答案：B
+解析：int(x) 是类型转换函数，用于把符合条件的数据转换为整数类型。例如 int('12') 得到整数 12。若字符串不能表示合法整数，例如 int('abc')，会产生 ValueError。
 
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
+题目：第7题  第2章 Python语言基础：float('3.14') 的结果类型是？
+选项A：整数类型
+选项B：浮点数类型
+选项C：字符串类型
+选项D：复数类型
+答案：B
+解析：float(x) 用于把 x 转换为浮点数。float('3.14') 的结果是 3.14，类型为 float。浮点数通常用于表示带小数的数值。
 
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
+题目：第8题  第2章 Python语言基础：str(100) 的结果是？
+选项A：100 这个整数
+选项B：'100' 这个字符串
+选项C：100.0 这个浮点数
+选项D：报错
+答案：B
+解析：str(x) 用于将对象转换为字符串。str(100) 得到字符串 '100'。注意字符串和整数不同，'100' + '1' 得到 '1001'，而 100 + 1 得到 101。
 
-题目：获取用户输入使用哪个函数？（第3题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
+题目：第9题  第2章 Python语言基础：eval('3+4') 的结果是？
+选项A：字符串 '3+4'
+选项B：整数 7
+选项C：浮点数 3.4
+选项D：报错
+答案：B
+解析：eval(str) 会计算字符串中的有效 Python 表达式，并返回结果。eval('3+4') 会把字符串内容当作表达式执行，结果为 7。使用 eval() 时要注意安全，不要执行来源不明的字符串。
+
+题目：第10题  第2章 Python语言基础：ord('A') 的作用是？
+选项A：把字符 A 转成对应整数编码
+选项B：把整数转成字符
+选项C：把字符串转成列表
+选项D：把字符转为小写
+答案：A
+解析：ord(x) 用于返回单个字符对应的整数编码，例如 ord('A') 返回 65。与它相反的是 chr(x)，chr(65) 返回 'A'。
+
+题目：第11题  第2章 Python语言基础：chr(65) 的结果是？
+选项A：65
+选项B：'65'
+选项C：'A'
+选项D：报错
 答案：C
-解析：input() 用于获取用户输入。
+解析：chr(x) 用于将整数编码转换为对应字符。chr(65) 的结果是字符 'A'。它经常与 ord() 配合理解字符和编码之间的关系。
 
-函数语法：
-input("提示内容")
+题目：第12题  第2章 Python语言基础：x += y 等价于以下哪一项？
+选项A：x = y
+选项B：x = x + y
+选项C：y = x + y
+选项D：x = x - y
+答案：B
+解析：复合赋值运算符 += 表示加后赋值，x += y 等价于 x = x + y。类似地，x -= y 等价于 x = x - y，x *= y 等价于 x = x * y。
 
-示例：
-name = input("请输入姓名：")
+题目：第13题  第2章 Python语言基础：x //= y 的展开形式是？
+选项A：x = x / y
+选项B：x = x % y
+选项C：x = x // y
+选项D：x = y // x
+答案：C
+解析：//= 是取整除赋值运算符。x //= y 等价于 x = x // y。// 会进行整除运算，例如 7 // 2 的结果是 3。
 
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
+题目：第14题  第2章 Python语言基础：比较表达式 3 > 5 的结果是？
+选项A：True
+选项B：False
+选项C：3
+选项D：5
+答案：B
+解析：比较运算符用于判断关系是否成立。3 > 5 不成立，所以结果为 False。Python 中比较表达式的结果是布尔值 True 或 False。
 
-例如：
-age = int(input("请输入年龄"))
+题目：第15题  第2章 Python语言基础：逻辑运算符 and 的含义是？
+选项A：逻辑与
+选项B：逻辑或
+选项C：逻辑非
+选项D：赋值
+答案：A
+解析：and 表示逻辑与，只有左右两个条件都为真时，整体结果才为 True。例如 True and False 的结果是 False。常用于同时满足多个条件的判断。
 
-题目：创建函数使用哪个关键字？（第4题）
+题目：第16题  第2章 Python语言基础：逻辑运算符 or 的含义是？
+选项A：逻辑与
+选项B：逻辑或
+选项C：逻辑非
+选项D：取余
+答案：B
+解析：or 表示逻辑或，只要左右两个条件中至少有一个为真，整体结果就是 True。例如 True or False 的结果是 True。
+
+题目：第17题  第2章 Python语言基础：not True 的结果是？
+选项A：True
+选项B：False
+选项C：None
+选项D：报错
+答案：B
+解析：not 是逻辑非，用于对布尔值取反。not True 得到 False，not False 得到 True。它常用于表示“不满足某条件”。
+
+题目：第18题  第2章 Python语言基础：在 Python 运算符优先级中，通常优先级最高的是？
+选项A：+
+选项B：*
+选项C：**
+选项D：==
+答案：C
+解析：幂运算符 ** 的优先级高于乘除和加减。例如 2 + 3 ** 2 会先计算 3 ** 2，再加 2，结果为 11。需要改变顺序时应使用括号。
+
+题目：第19题  第2章 Python语言基础：input('请输入：') 的返回值默认是什么类型？
+选项A：int
+选项B：float
+选项C：str
+选项D：bool
+答案：C
+解析：input() 用于接收键盘输入，基本语法为 variable = input('提示文字')。无论用户输入的是数字还是文字，input() 默认返回字符串类型，如果要参与数值运算，需要用 int() 或 float() 转换。
+
+题目：第20题  第2章 Python语言基础：以下哪一个是水平制表符？
+选项A：\n
+选项B：\t
+选项C：\\
+选项D：\0
+答案：B
+解析：\t 表示水平制表符，通常用于横向跳到下一个制表位。\n 表示换行，\\ 表示一个反斜杠，\0 表示空字符。
+
+题目：第21题  第3章 流程控制：if 语句后面必须跟什么符号来开始语句块？
+选项A：分号 ;
+选项B：冒号 :
+选项C：逗号 ,
+选项D：句号 .
+答案：B
+解析：Python 的 if、else、elif、while、for 等控制语句后面通常要写冒号 :，下一行缩进表示语句块。例如：if a > 0:
+    print(a)。
+
+题目：第22题  第3章 流程控制：if...else 语句中，else 可以单独使用吗？
+选项A：可以
+选项B：不可以，必须和 if 配合使用
+选项C：只能和 for 配合使用
+选项D：只能和 while 配合使用
+答案：B
+解析：else 不能单独构成条件分支，它必须与前面的 if 配合使用。if 条件为真时执行 if 语句块，否则执行 else 语句块。
+
+题目：第23题  第3章 流程控制：if...elif...else 适合处理什么情况？
+选项A：只有一种结果
+选项B：多分支条件判断
+选项C：只用于循环
+选项D：只用于异常处理
+答案：B
+解析：if...elif...else 用于多分支判断。程序会从上到下依次判断条件，遇到第一个为真的分支就执行；如果所有条件都不成立，才执行 else。
+
+题目：第24题  第3章 流程控制：while 循环的执行条件是什么？
+选项A：条件表达式为 True
+选项B：条件表达式为 False
+选项C：循环体为空
+选项D：必须有 else
+答案：A
+解析：while 条件表达式: 的含义是只要条件为真，就反复执行循环体。每执行一次后会重新判断条件，直到条件为假时退出循环。
+
+题目：第25题  第3章 流程控制：for item in listname: 中 item 的作用是？
+选项A：保存列表名称
+选项B：保存当前遍历到的元素
+选项C：表示循环次数固定为 item
+选项D：表示索引必须从 item 开始
+答案：B
+解析：for 循环用于遍历可迭代对象。item 是迭代变量，每次循环会保存对象中的一个元素值。例如 for item in [1,2,3]: 会依次让 item 等于 1、2、3。
+
+题目：第26题  第3章 流程控制：break 语句的作用是？
+选项A：跳过本次循环剩余语句，进入下一次循环
+选项B：立即结束所在循环
+选项C：定义函数
+选项D：什么也不做
+答案：B
+解析：break 用于跳出当前所在循环，一旦执行 break，循环立即结束。它常和 if 条件配合使用，例如当找到目标数据后直接退出循环。
+
+题目：第27题  第3章 流程控制：continue 语句的作用是？
+选项A：立即结束整个程序
+选项B：跳过本次循环剩余语句，进入下一次循环
+选项C：结束函数并返回值
+选项D：删除循环变量
+答案：B
+解析：continue 不会结束整个循环，而是跳过本次循环中 continue 后面的语句，直接进入下一次循环判断。它适合用于跳过不需要处理的数据。
+
+题目：第28题  第3章 流程控制：pass 语句通常表示什么？
+选项A：占位，不执行实际操作
+选项B：中断循环
+选项C：继续循环
+选项D：抛出异常
+答案：A
+解析：pass 是空语句，通常用于占位。当语法上需要一个语句块，但暂时不想写具体代码时，可以写 pass，避免语法错误。
+
+题目：第29题  第3章 流程控制：for 循环可以遍历以下哪类对象？
+选项A：字符串
+选项B：列表
+选项C：元组
+选项D：以上都可以
+答案：D
+解析：for 循环可以遍历有序序列或可迭代对象，如字符串、列表、元组等。语法为 for 迭代变量 in 对象:，循环体会重复执行。
+
+题目：第30题  第3章 流程控制：条件语句和循环语句的语句块在 Python 中主要依靠什么表示层级？
+选项A：花括号
+选项B：缩进
+选项C：begin/end
+选项D：圆括号
+答案：B
+解析：Python 使用缩进表示代码块层级。例如 if 条件后的代码需要统一缩进。缩进错误会导致 IndentationError。
+
+题目：第31题  第4章 序列应用：切片 sname[start:end:step] 中 end 的含义是？
+选项A：包含 end 位置
+选项B：不包含 end 位置
+选项C：只能为负数
+选项D：表示步长
+答案：B
+解析：切片语法为 sname[start:end:step]。start 表示开始位置且包含该位置；end 表示截止位置但不包含该位置；step 表示步长。省略 start 默认从 0 开始，省略 end 默认到序列末尾。
+
+题目：第32题  第4章 序列应用：表达式 'a' in 'cat' 的结果是？
+选项A：True
+选项B：False
+选项C：'a'
+选项D：报错
+答案：A
+解析：in 用于判断某个元素是否属于序列，语法为 value in sequence。字符串也是序列，'cat' 中包含字符 'a'，所以结果为 True。
+
+题目：第33题  第4章 序列应用：list() 函数的作用是？
+选项A：将可迭代对象转换为列表
+选项B：删除列表
+选项C：统计列表长度
+选项D：给列表排序但不返回结果
+答案：A
+解析：list(data) 可以把 range 对象、字符串、元组等可迭代对象转换为列表。例如 list(range(3)) 得到 [0, 1, 2]。
+
+题目：第34题  第4章 序列应用：reversed() 的主要作用是？
+选项A：求元素和
+选项B：反向序列中的元素
+选项C：删除序列
+选项D：判断成员关系
+答案：B
+解析：reversed() 用于返回一个反向迭代器，可以按相反顺序遍历序列。若需要列表形式，可以使用 list(reversed(seq))。
+
+题目：第35题  第4章 序列应用：enumerate() 常用于什么场景？
+选项A：同时获得索引和值
+选项B：只获得最大值
+选项C：把列表转成字符串
+选项D：清空集合
+答案：A
+解析：enumerate(sequence) 会把序列组合成索引序列，在 for 循环中常写为 for index, item in enumerate(listname):，这样可以同时得到索引 index 和元素 item。
+
+题目：第36题  第4章 序列应用：创建空列表的正确写法是？
+选项A：emptylist = {}
+选项B：emptylist = []
+选项C：emptylist = ()
+选项D：emptylist = set[]
+答案：B
+解析：空列表使用方括号创建：emptylist = []。{} 默认创建空字典，不是空集合；() 创建空元组。
+
+题目：第37题  第4章 序列应用：使用 range() 结果创建数值列表，常见写法是？
+选项A：list(range(5))
+选项B：range.list(5)
+选项C：toList(range,5)
+选项D：list = range[]
+答案：A
+解析：list() 可以把 range 对象转换为列表。例如 list(range(5)) 得到 [0, 1, 2, 3, 4]。语法为 list(data)。
+
+题目：第38题  第4章 序列应用：删除已经创建的列表 listname 应使用？
+选项A：remove listname
+选项B：delete(listname)
+选项C：del listname
+选项D：listname.clearall()
+答案：C
+解析：del 语句可以删除变量或对象引用。删除列表变量可写为 del listname。注意 clear() 是清空集合或列表内容，而 del 是删除变量名。
+
+题目：第39题  第4章 序列应用：listname.append(obj) 的作用是？
+选项A：把 obj 添加到列表末尾
+选项B：删除 obj
+选项C：返回 obj 出现次数
+选项D：按 obj 排序
+答案：A
+解析：append() 是列表方法，语法为 listname.append(obj)，用于把一个对象作为一个整体添加到列表末尾。
+
+题目：第40题  第4章 序列应用：listname.extend(seq) 的作用是？
+选项A：将 seq 的元素逐个追加到列表末尾
+选项B：只追加 seq 的第一个元素
+选项C：清空 listname
+选项D：删除 seq
+答案：A
+解析：extend() 用于扩展列表，语法为 listname.extend(seq)。它会把 seq 中的元素逐个追加到 listname 后面，而不是把整个 seq 当成一个元素。
+
+题目：第41题  第4章 序列应用：listname.count(obj) 的作用是？
+选项A：统计 obj 在列表中出现的次数
+选项B：返回 obj 的索引
+选项C：删除 obj
+选项D：给 obj 排序
+答案：A
+解析：count() 是列表对象的方法，语法为 listname.count(obj)，用于统计指定元素 obj 在列表中出现的次数。它要求精确匹配。
+
+题目：第42题  第4章 序列应用：listname.index(obj) 的作用是？
+选项A：返回指定元素首次出现的索引
+选项B：统计所有元素总和
+选项C：删除指定元素
+选项D：反转列表
+答案：A
+解析：index() 用于获取指定元素首次出现的位置，语法为 listname.index(obj)。如果元素不存在，通常会引发 ValueError。
+
+题目：第43题  第4章 序列应用：sum(iterable[, start]) 中 start 的含义是？
+选项A：指定排序方式
+选项B：指定统计结果从哪个数开始累加
+选项C：指定最大索引
+选项D：指定切片步长
+答案：B
+解析：sum() 用于统计数值列表等可迭代对象的元素和。start 是可选参数，表示最终结果再加上 start 指定的起始值，默认是 0。
+
+题目：第44题  第4章 序列应用：listname.sort() 的特点是？
+选项A：排序后原列表会改变
+选项B：排序后原列表不变
+选项C：只能降序排序
+选项D：只能排序字符串
+答案：A
+解析：sort() 是列表对象的方法，会直接修改原列表。语法为 listname.sort(key=None, reverse=False)。reverse=True 表示降序，默认 reverse=False 表示升序。
+
+题目：第45题  第4章 序列应用：sorted(iterable) 的特点是？
+选项A：直接修改原列表
+选项B：返回排序后的新列表，原对象顺序通常不变
+选项C：只能用于元组
+选项D：只能用于集合
+答案：B
+解析：sorted() 是内置函数，语法为 sorted(iterable, key=None, reverse=False)。它返回排序后的新列表，通常不会改变原列表的元素顺序。
+
+题目：第46题  第4章 序列应用：sort(reverse=True) 表示什么？
+选项A：升序排列
+选项B：降序排列
+选项C：随机排列
+选项D：不排序
+答案：B
+解析：列表的 sort() 方法中，reverse 是可选参数。reverse=True 表示降序排列；reverse=False 表示升序排列，也是默认值。
+
+题目：第47题  第4章 序列应用：列表推导式 [x*x for x in range(3)] 的结果是？
+选项A：[0, 1, 4]
+选项B：[1, 2, 3]
+选项C：[0, 1, 2]
+选项D：[3, 6, 9]
+答案：A
+解析：列表推导式语法为 [Expression for var in range]。range(3) 依次产生 0、1、2，表达式 x*x 分别得到 0、1、4，所以结果是 [0, 1, 4]。
+
+题目：第48题  第4章 序列应用：带条件的列表推导式应写成哪种形式？
+选项A：[Expression for var in list if condition]
+选项B：[if condition for var in list]
+选项C：[Expression if list for var]
+选项D：for var in list [Expression]
+答案：A
+解析：从列表中筛选符合条件的元素时，常用语法为 newlist = [Expression for var in list if condition]。condition 为筛选条件。
+
+题目：第49题  第4章 序列应用：创建元组常用的符号是？
+选项A：[]
+选项B：()
+选项C：{}
+选项D：<>
+答案：B
+解析：元组通常用圆括号创建，例如 tuplename = (1, 2, 3)。也可以用 tuple(data) 将可迭代对象转换为元组。
+
+题目：第50题  第4章 序列应用：tuple(range(3)) 的结果是？
+选项A：[0,1,2]
+选项B：(0,1,2)
+选项C：{0,1,2}
+选项D：'012'
+答案：B
+解析：tuple(data) 可以将 range 对象等可迭代对象转换为元组。tuple(range(3)) 得到 (0, 1, 2)。
+
+题目：第51题  第4章 序列应用：直接创建集合的常用语法是？
+选项A：setname = [1,2,3]
+选项B：setname = (1,2,3)
+选项C：setname = {1,2,3}
+选项D：setname = <1,2,3>
+答案：C
+解析：集合可以使用大括号创建，例如 setname = {1, 2, 3}。集合中的元素通常不重复，适合做去重和成员判断。
+
+题目：第52题  第4章 序列应用：set('aba') 的结果最可能包含哪些元素？
+选项A：'aba' 这个整体
+选项B：a 和 b 两个不重复字符
+选项C：三个元素 a、b、a
+选项D：报错
+答案：B
+解析：set(iteration) 可以把可迭代对象转换为集合。字符串会被逐字符遍历，集合会自动去重，所以 set('aba') 包含 'a' 和 'b'。
+
+题目：第53题  第4章 序列应用：setname.add(element) 的作用是？
+选项A：向集合添加一个元素
+选项B：删除集合
+选项C：清空集合
+选项D：排序集合
+答案：A
+解析：add() 是集合方法，语法为 setname.add(element)，用于向集合中添加一个元素。需要注意集合元素通常应是不可变、可哈希对象，如数字、字符串、布尔值等。
+
+题目：第54题  第4章 序列应用：集合对象 clear() 方法的作用是？
+选项A：清空集合中所有元素
+选项B：删除一个随机元素
+选项C：删除指定元素
+选项D：返回集合长度
+答案：A
+解析：clear() 用于清空集合，使其变为空集合。语法为 setname.clear()。与 del setname 不同，clear() 保留变量名，只删除其中元素。
+
+题目：第55题  第4章 序列应用：集合 remove(x) 的作用是？
+选项A：移除指定元素 x
+选项B：随机移除一个元素
+选项C：返回元素个数
+选项D：合并两个集合
+答案：A
+解析：remove() 用于从集合中删除指定元素，语法为 setname.remove(element)。如果元素不存在，通常会报错；如果不确定是否存在，可先用 in 判断。
+
+题目：第56题  第5章 字符串：len('Python') 的结果是？
+选项A：5
+选项B：6
+选项C：7
+选项D：报错
+答案：B
+解析：len(string) 用于统计字符串长度。'Python' 由 P、y、t、h、o、n 六个字符组成，所以 len('Python') 的结果是 6。
+
+题目：第57题  第5章 字符串：字符串切片 string[start:end:step] 中 step 的作用是？
+选项A：开始索引
+选项B：结束索引
+选项C：步长
+选项D：字符串长度
+答案：C
+解析：字符串切片语法与序列切片类似，step 表示步长。省略时默认为 1。例如 'abcdef'[::2] 会每隔 1 个字符取一次，得到 'ace'。
+
+题目：第58题  第5章 字符串：'a,b,c'.split(',') 的结果是？
+选项A：'abc'
+选项B：['a', 'b', 'c']
+选项C：('a','b','c')
+选项D：报错
+答案：B
+解析：split() 用于分割字符串，语法为 str.split(sep, maxsplit)。sep 指定分隔符，返回值是分割后的字符串列表。
+
+题目：第59题  第5章 字符串：split() 中 maxsplit 的作用是？
+选项A：指定最大分割次数
+选项B：指定字符串长度
+选项C：指定编码方式
+选项D：指定换行符
+答案：A
+解析：str.split(sep, maxsplit) 中 maxsplit 是可选参数，用于指定分割次数。如果不指定或为 -1，则不限制分割次数；返回列表元素个数最多为 maxsplit+1。
+
+题目：第60题  第5章 字符串：'-'.join(['a','b','c']) 的结果是？
+选项A：'abc'
+选项B：'a-b-c'
+选项C：['a-b-c']
+选项D：报错
+答案：B
+解析：join() 用于合并字符串，语法为 strnew = separator.join(iterable)。'-' 是分隔符，会插入到各元素之间，所以结果是 'a-b-c'。
+
+题目：第61题  第5章 字符串：旧式格式化中 %s 通常表示什么？
+选项A：字符串
+选项B：十进制整数
+选项C：浮点数
+选项D：百分号本身
+答案：A
+解析：%s 用于把对象按 str() 的形式格式化为字符串。例如 '姓名：%s' % '小明' 得到 '姓名：小明'。
+
+题目：第62题  第5章 字符串：旧式格式化中 %d 表示什么？
+选项A：字符串
+选项B：十进制整数
+选项C：八进制整数
+选项D：单个字符
+答案：B
+解析：%d 或 %i 用于格式化十进制整数。例如 '年龄：%d' % 18 得到 '年龄：18'。
+
+题目：第63题  第5章 字符串：旧式格式化中 %f 表示什么？
+选项A：浮点数
+选项B：字符串
+选项C：十六进制整数
+选项D：单个字符
+答案：A
+解析：%f 或 %F 用于格式化浮点数。默认情况下常显示小数位，可通过 %.2f 等方式控制小数位数。
+
+题目：第64题  第5章 字符串：format() 格式化中 {:b} 常用于把整数显示为什么形式？
+选项A：二进制
+选项B：八进制
+选项C：十六进制
+选项D：科学计数法
+答案：A
+解析：format() 的格式化字符 b 表示将十进制整数转换为二进制表示再格式化。例如 format(5, 'b') 得到 '101'。
+
+题目：第65题  第5章 字符串：format() 格式化中 {:x} 表示什么？
+选项A：二进制
+选项B：八进制
+选项C：十六进制
+选项D：百分比
+答案：C
+解析：x 或 X 表示将十进制整数转换为十六进制表示。x 使用小写字母，X 使用大写字母。
+
+题目：第66题  第5章 字符串：str.encode() 的默认编码通常是？
+选项A：ASCII
+选项B：GBK
+选项C：UTF-8
+选项D：UTF-16
+答案：C
+解析：encode() 用于把字符串编码为二进制数据，语法为 str.encode([encoding='utf-8'][, errors='strict'])，默认编码通常是 UTF-8。
+
+题目：第67题  第5章 字符串：bytes.decode() 的作用是？
+选项A：把字符串转成字节
+选项B：把字节数据解码成字符串
+选项C：分割字符串
+选项D：合并字符串
+答案：B
+解析：decode() 用于把二进制字节数据解码为字符串，语法为 bytes.decode([encoding='utf-8'][, errors='strict'])。编码和解码使用的字符集应尽量一致。
+
+题目：第68题  第5章 正则表达式：元字符 . 的含义是？
+选项A：匹配除换行符以外的任意字符
+选项B：只匹配数字
+选项C：只匹配空白符
+选项D：匹配字符串结束
+答案：A
+解析：正则表达式中的 . 表示匹配除换行符以外的任意单个字符。若要匹配真正的句点，需要进行转义，例如 \.。
+
+题目：第69题  第5章 正则表达式：\d 的含义是？
+选项A：匹配数字
+选项B：匹配空白符
+选项C：匹配字母或数字或下划线或汉字
+选项D：匹配单词边界
+答案：A
+解析：\d 是常用正则元字符，用于匹配数字字符，相当于匹配 0 到 9。
+
+题目：第70题  第5章 正则表达式：\s 的含义是？
+选项A：匹配任意空白符
+选项B：匹配数字
+选项C：匹配字符串开头
+选项D：匹配字符串结尾
+答案：A
+解析：\s 用于匹配任意空白符，例如空格、换行符、制表符等。
+
+题目：第71题  第5章 正则表达式：^ 在正则表达式中通常表示什么？
+选项A：匹配字符串开始
+选项B：匹配字符串结束
+选项C：匹配数字
+选项D：匹配一次或多次
+答案：A
+解析：^ 用于匹配字符串的开始位置。例如 ^abc 表示字符串必须以 abc 开头。
+
+题目：第72题  第5章 正则表达式：$ 在正则表达式中通常表示什么？
+选项A：匹配字符串开始
+选项B：匹配字符串结束
+选项C：匹配任意字符
+选项D：匹配空白符
+答案：B
+解析：$ 用于匹配字符串结束位置。例如 abc$ 表示字符串必须以 abc 结尾。
+
+题目：第73题  第5章 正则表达式：限定符 ? 的含义是？
+选项A：匹配前面的字符零次或一次
+选项B：匹配前面的字符一次或多次
+选项C：匹配前面的字符零次或多次
+选项D：匹配前面的字符 n 次
+答案：A
+解析：? 表示前面的字符出现 0 次或 1 次。例如 colou?r 可以匹配 color 和 colour。
+
+题目：第74题  第5章 正则表达式：限定符 + 的含义是？
+选项A：零次或一次
+选项B：一次或多次
+选项C：零次或多次
+选项D：恰好两次
+答案：B
+解析：+ 表示前面的字符至少出现一次，可以出现多次。例如 go+gle 可以匹配 gogle、google、goooogle 等。
+
+题目：第75题  第5章 正则表达式：限定符 * 的含义是？
+选项A：零次或多次
+选项B：一次或多次
+选项C：恰好一次
+选项D：字符串开头
+答案：A
+解析：* 表示前面的字符出现零次或多次。例如 go*gle 可以匹配 ggle、gogle、google 等。
+
+题目：第76题  第5章 正则表达式：限定符 {n} 的含义是？
+选项A：最多 n 次
+选项B：至少 n 次
+选项C：恰好 n 次
+选项D：零次或一次
+答案：C
+解析：{n} 表示前面的字符恰好出现 n 次。例如 go{2}gle 只能匹配 google。
+
+题目：第77题  第5章 正则表达式：限定符 {n,m} 的含义是？
+选项A：最少 n 次，最多 m 次
+选项B：恰好 n+m 次
+选项C：最多 n 次
+选项D：至少 m 次
+答案：A
+解析：{n,m} 表示前面的字符至少出现 n 次，最多出现 m 次。例如 employe{0,2} 可匹配 employ、employe、employee。
+
+题目：第78题  第6章 函数：定义函数使用的关键字是？
 选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第5题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第6题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第7题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第8题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第9题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第10题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第11题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第12题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第13题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第14题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第15题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第16题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第17题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第18题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第19题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第20题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第21题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第22题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第23题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第24题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第25题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第26题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第27题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第28题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第29题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第30题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第31题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第32题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第33题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第34题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第35题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第36题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第37题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第38题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第39题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第40题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第41题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第42题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第43题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第44题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第45题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第46题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第47题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第48题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第49题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第50题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第51题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第52题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第53题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第54题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第55题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第56题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第57题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第58题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第59题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第60题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第61题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第62题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第63题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第64题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第65题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第66题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第67题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第68题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第69题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第70题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第71题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第72题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第73题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第74题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第75题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第76题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第77题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第78题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第79题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第80题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第81题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第82题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第83题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第84题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第85题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第86题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第87题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第88题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第89题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第90题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第91题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第92题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第93题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第94题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第95题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第96题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第97题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第98题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第99题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第100题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第101题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第102题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第103题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第104题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第105题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第106题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第107题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第108题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第109题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第110题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第111题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第112题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第113题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第114题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第115题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第116题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第117题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第118题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第119题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第120题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第121题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第122题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第123题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第124题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第125题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第126题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第127题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第128题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第129题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第130题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第131题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第132题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第133题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第134题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第135题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第136题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第137题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第138题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第139题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第140题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第141题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第142题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第143题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第144题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第145题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第146题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第147题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第148题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第149题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第150题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第151题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第152题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第153题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第154题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第155题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第156题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第157题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第158题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第159题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第160题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第161题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第162题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第163题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第164题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第165题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第166题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第167题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第168题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第169题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第170题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第171题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第172题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第173题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第174题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第175题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第176题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第177题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第178题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第179题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第180题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第181题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第182题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第183题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第184题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第185题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第186题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第187题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第188题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第189题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第190题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第191题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第192题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第193题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第194题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第195题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
-题目：Python 文件的扩展名是什么？（第196题）
-选项A：.java
-选项B：.py
-选项C：.cpp
-选项D：.html
-答案：B
-解析：Python 文件默认使用 .py 作为扩展名。
-
-相关知识拓展：
-1. Python 程序通常保存为 xxx.py
-2. 运行方式：
-   python 文件名.py
-
-示例：
-print("Hello World")
-
-常见扩展名：
-.py      Python源代码
-.pyc     编译后的字节码文件
-.ipynb   Jupyter Notebook 文件
-
-题目：用于输出内容的函数是什么？（第197题）
-选项A：input()
-选项B：print()
-选项C：open()
-选项D：len()
-答案：B
-解析：print() 用于在控制台输出内容。
-
-函数语法：
-print(内容)
-
-多个内容输出：
-print(a,b,c)
-
-换行与结束符：
-print("hello", end="")
-
-格式化输出：
-name = "Tom"
-print(f"你好 {name}")
-
-常见用途：
-1. 调试程序
-2. 输出变量
-3. 显示结果
-
-题目：获取用户输入使用哪个函数？（第198题）
-选项A：scan()
-选项B：write()
-选项C：input()
-选项D：read()
-答案：C
-解析：input() 用于获取用户输入。
-
-函数语法：
-input("提示内容")
-
-示例：
-name = input("请输入姓名：")
-
-注意：
-1. input() 返回值永远是字符串
-2. 若需要数字需转换
-
-例如：
-age = int(input("请输入年龄"))
-
-题目：创建函数使用哪个关键字？（第199题）
-选项A：class
-选项B：import
-选项C：def
-选项D：lambda
-答案：C
-解析：def 用于定义函数。
-
-基本语法：
-def 函数名():
-    代码
-
-带参数：
-def add(a,b):
-    return a+b
-
-调用函数：
-add(1,2)
-
-函数作用：
-1. 代码复用
-2. 降低重复代码
-3. 提高维护性
-
-题目：向列表末尾添加元素的方法是什么？（第200题）
-选项A：insert()
-选项B：append()
-选项C：add()
-选项D：push()
-答案：B
-解析：append() 用于向列表末尾添加元素。
-
-语法：
-列表.append(元素)
-
-示例：
-nums = [1,2]
-nums.append(3)
-
-结果：
-[1,2,3]
-
-相关方法：
-insert(index,obj)  插入元素
-extend(iterable)   扩展列表
-
+选项B：def
+选项C：lambda
+选项D：return
+答案：B
+解析：Python 使用 def 定义普通函数，语法为 def functionname([parameterlist]):。函数体需要缩进，如果有返回值，可以使用 return。
+
+题目：第79题  第6章 函数：调用无参数函数 hello 的正确写法是？
+选项A：hello
+选项B：hello()
+选项C：def hello
+选项D：call hello
+答案：B
+解析：函数调用需要使用函数名加圆括号。即使函数没有参数，也要写 hello()。只写 hello 通常表示函数对象本身，而不是执行函数。
+
+题目：第80题  第6章 函数：def f(a, b=1): 中 b=1 表示什么？
+选项A：b 是全局变量
+选项B：b 有默认值 1
+选项C：b 不能被传参
+选项D：b 必须是字符串
+答案：B
+解析：函数参数可以设置默认值，语法为 def functionname(..., parameter=defaultvalue):。调用时如果不给 b 传值，b 就使用默认值 1。
+
+题目：第81题  第6章 函数：return 语句的作用是？
+选项A：定义函数名
+选项B：结束函数并返回值
+选项C：导入模块
+选项D：捕获异常
+答案：B
+解析：return [value] 用于从函数中返回结果，同时结束函数执行。value 可以省略、可以是一个值，也可以是多个值。
+
+题目：第82题  第6章 函数：lambda 表达式用于创建什么？
+选项A：类
+选项B：匿名函数
+选项C：模块
+选项D：异常对象
+答案：B
+解析：lambda 用于创建匿名函数，语法为 result = lambda arg1, arg2: expression。lambda 函数适合写简单的一行表达式。
+
+题目：第83题  第6章 函数：lambda x: x+1 中冒号后面是什么？
+选项A：函数名
+选项B：表达式
+选项C：模块名
+选项D：参数类型
+答案：B
+解析：lambda 的语法为 lambda 参数列表: 表达式。冒号后面必须是表达式，用于计算并返回结果。lambda x: x+1 表示接收 x 并返回 x+1。
+
+题目：第84题  第6章 函数：函数定义中的 parameterlist 指什么？
+选项A：函数体
+选项B：参数列表
+选项C：返回值列表
+选项D：模块列表
+答案：B
+解析：parameterlist 是参数列表，用于接收调用函数时传入的数据。多个参数之间用逗号分隔。如果没有参数，则函数定义和调用时都只写空括号。
+
+题目：第85题  第6章 函数：函数体 functionbody 的缩进有什么要求？
+选项A：不需要缩进
+选项B：必须相对 def 行缩进
+选项C：必须写在同一行
+选项D：必须用花括号包住
+答案：B
+解析：Python 使用缩进表示代码块。def 语句后面的函数体必须缩进，否则会产生缩进错误。
+
+题目：第86题  第6章 函数：函数文档字符串通常写在哪里？
+选项A：def 语句前面
+选项B：函数体第一行附近，用三引号字符串表示
+选项C：return 后面
+选项D：文件最后一行
+答案：B
+解析：函数说明可以使用三引号字符串作为文档字符串，通常放在函数体开头，用于说明函数功能、参数作用和返回值等。
+
+题目：第87题  第6章 函数：如果函数没有写 return，默认返回什么？
+选项A：0
+选项B：False
+选项C：None
+选项D：空字符串
+答案：C
+解析：Python 函数如果没有执行 return 语句，默认返回 None。None 表示没有具体返回值。
+
+题目：第88题  第6章 函数：调用函数时 parametersvalue 指什么？
+选项A：函数名称
+选项B：传给参数的实际值
+选项C：函数注释
+选项D：函数文件名
+答案：B
+解析：parametersvalue 是调用函数时传入的实参值。如果函数有多个形参，调用时通常需要按顺序或按关键字传入对应实参。
+
+题目：第89题  第6章 函数：以下哪种函数定义是合法的？
+选项A：def add(a,b):
+选项B：function add(a,b):
+选项C：add def(a,b):
+选项D：def add[a,b]:
+答案：A
+解析：Python 定义函数的语法是 def functionname([parameterlist]):。函数名后使用圆括号，参数之间用逗号分隔，末尾用冒号。
+
+题目：第90题  第7章 面向对象：定义类使用的关键字是？
+选项A：def
+选项B：class
+选项C：import
+选项D：try
+答案：B
+解析：Python 使用 class 定义类，基本语法为 class ClassName:。类体中可以定义类变量、方法和属性。
+
+题目：第91题  第7章 面向对象：类名通常采用什么命名习惯？
+选项A：全部小写且用下划线
+选项B：首字母大写的驼峰式命名
+选项C：必须全部大写
+选项D：必须以数字开头
+答案：B
+解析：类名一般使用大写字母开头，如果由多个单词组成，后续单词首字母也大写，这就是常见的驼峰式命名法，例如 StudentInfo。
+
+题目：第92题  第7章 面向对象：创建类的实例通常使用什么形式？
+选项A：classname(parameterlist)
+选项B：def classname
+选项C：import classname
+选项D：class classname()
+答案：A
+解析：类定义完成后，可以用 类名(参数列表) 创建实例对象。如果 __init__() 没有额外参数，参数列表可以为空。
+
+题目：第93题  第7章 面向对象：实例方法的第一个参数通常是什么？
+选项A：this
+选项B：self
+选项C：class
+选项D：object
+答案：B
+解析：实例方法的第一个参数必须表示当前实例，惯例命名为 self。语法为 def functionName(self, parameterlist):。调用时 self 不需要手动传入。
+
+题目：第94题  第7章 面向对象：访问实例方法的语法是？
+选项A：instanceName.functionName(parametervalue)
+选项B：functionName.instanceName()
+选项C：class.functionName[]
+选项D：instanceName->functionName()
+答案：A
+解析：实例方法创建后，可通过实例名和点操作符调用，语法为 instanceName.functionName(parametervalue)。点号表示访问对象的属性或方法。
+
+题目：第95题  第7章 面向对象：@property 的作用是？
+选项A：导入模块
+选项B：把方法变成类似属性的访问形式
+选项C：删除属性
+选项D：定义异常
+答案：B
+解析：@property 可以把一个方法包装成用于计算的属性。语法为 @property
+def methodname(self):
+    return 结果。调用时可写 obj.methodname，而不是 obj.methodname()。
+
+题目：第96题  第7章 面向对象：继承的基本语法是？
+选项A：class ClassName(baseclasslist):
+选项B：def ClassName(baseclasslist):
+选项C：import ClassName from baseclasslist
+选项D：ClassName inherits baseclasslist
+答案：A
+解析：Python 在定义类时，可以在类名后面的圆括号中写基类名称，语法为 class ClassName(baseclasslist):。多个基类可用逗号分隔。
+
+题目：第97题  第7章 面向对象：如果类体暂时不写具体功能，可以使用什么语句占位？
+选项A：break
+选项B：continue
+选项C：pass
+选项D：raise
+答案：C
+解析：pass 是空语句，常用于类、函数、条件分支等语句块的占位。类体不能为空，如果暂时没有内容，可以写 pass。
+
+题目：第98题  第7章 面向对象：方法重写指什么？
+选项A：在派生类中重新定义基类已有方法
+选项B：删除基类
+选项C：把方法改成变量
+选项D：给模块改名
+答案：A
+解析：方法重写是指派生类中定义与基类同名的方法，从而覆盖或改变继承来的行为。这样可以让不同子类对同一方法给出不同实现。
+
+题目：第99题  第7章 面向对象：__init__() 方法常用于什么？
+选项A：初始化对象
+选项B：删除对象
+选项C：排序对象
+选项D：导入对象
+答案：A
+解析：__init__() 是构造初始化方法，在创建实例时自动调用，常用于给实例属性赋初始值。它的第一个参数通常也是 self。
+
+题目：第100题  第7章 面向对象：self 参数代表什么？
+选项A：类的实例本身
+选项B：类的父类名称
+选项C：模块名称
+选项D：数据库连接
+答案：A
+解析：self 表示当前对象实例。通过 self 可以在实例方法中访问或修改实例属性，如 self.name = name。self 不是关键字，但使用 self 是 Python 惯例。
+
+题目：第101题  第7章 面向对象：继承的一个主要好处是？
+选项A：只能让代码更长
+选项B：实现代码重用并理顺类之间关系
+选项C：禁止使用方法
+选项D：只能用于字符串
+答案：B
+解析：继承可以让子类复用父类已有代码，并在需要时扩展或重写功能。它有助于表达“某类是另一类的一种”的关系。
+
+题目：第102题  第8章 模块：导入整个模块的常用语句是？
+选项A：import modulename
+选项B：from modulename
+选项C：include modulename
+选项D：using modulename
+答案：A
+解析：导入整个模块使用 import modulename [as alias]。导入后通常通过 模块名.成员名 使用模块中的函数、变量或类。
+
+题目：第103题  第8章 模块：import math as m 中 as m 的作用是？
+选项A：删除 math 模块
+选项B：给 math 模块起别名 m
+选项C：只导入 math 的 m 函数
+选项D：让 math 变成字符串
+答案：B
+解析：import modulename as alias 表示给模块起别名。之后可以用 m 代替 math，例如 m.sqrt(4)。别名常用于简化较长模块名。
+
+题目：第104题  第8章 模块：from modelname import member 的作用是？
+选项A：从模块中导入指定成员
+选项B：删除指定成员
+选项C：重命名模块文件
+选项D：关闭模块
+答案：A
+解析：from...import 语句用于从模块中导入变量、函数或类等成员。可以导入一个或多个成员，多个成员之间用逗号分隔。
+
+题目：第105题  第8章 模块：from math import * 中 * 表示什么？
+选项A：导入全部定义
+选项B：乘法运算
+选项C：注释
+选项D：只导入私有成员
+答案：A
+解析：from 模块 import * 中星号表示导入模块中的全部公开定义。虽然方便，但可能造成命名冲突，实际开发中应谨慎使用。
+
+题目：第106题  第8章 模块：sys 模块主要与什么相关？
+选项A：Python解释器及其环境操作
+选项B：图像绘制
+选项C：数据库表设计
+选项D：网页样式
+答案：A
+解析：sys 是 Python 常用标准模块，主要提供与 Python 解释器及其运行环境相关的功能，例如系统路径、命令行参数等。
+
+题目：第107题  第8章 模块：os 模块主要提供什么功能？
+选项A：访问操作系统服务
+选项B：正则表达式匹配
+选项C：GUI按钮
+选项D：游戏手柄控制
+答案：A
+解析：os 模块提供访问操作系统服务的功能，例如文件路径、目录操作、环境变量等。文件删除 os.remove() 也属于 os 模块功能。
+
+题目：第108题  第8章 模块：re 模块主要用于什么？
+选项A：正则表达式匹配和替换
+选项B：时间处理
+选项C：日志记录
+选项D：精确小数计算
+答案：A
+解析：re 模块用于在字符串中执行正则表达式匹配、搜索、替换等操作。常用函数包括 match、search、sub 等。
+
+题目：第109题  第8章 模块：json 模块主要用于什么？
+选项A：JSON序列化和反序列化
+选项B：图形界面布局
+选项C：游戏开发
+选项D：打开光驱
+答案：A
+解析：json 模块用于 JSON 数据的序列化和反序列化。序列化是把 Python 对象转换为 JSON 字符串，反序列化是把 JSON 字符串转换为 Python 对象。
+
+题目：第110题  第8章 模块：math 模块提供什么？
+选项A：算术运算函数
+选项B：数据库连接对象
+选项C：网页模板
+选项D：鼠标事件
+答案：A
+解析：math 是数学相关标准库，提供常用算术和数学函数，例如平方根、三角函数、取整等。
+
+题目：第111题  第8章 模块：tkinter 模块常用于什么？
+选项A：GUI编程
+选项B：正则表达式
+选项C：网络爬虫
+选项D：数据库回滚
+答案：A
+解析：tkinter 是 Python 进行 GUI 编程的标准库，用于创建窗口、按钮、标签等图形界面元素。
+
+题目：第112题  第9章 异常处理：访问未声明变量通常会引发什么异常？
+选项A：NameError
+选项B：IndexError
+选项C：KeyError
+选项D：ZeroDivisionError
+答案：A
+解析：NameError 通常在尝试访问没有声明或没有定义的变量时出现。例如 print(x) 但 x 未定义，就会引发 NameError。
+
+题目：第113题  第9章 异常处理：索引超出序列范围通常会引发什么异常？
+选项A：IndexError
+选项B：TypeError
+选项C：ValueError
+选项D：ImportError
+答案：A
+解析：IndexError 表示索引超出序列范围。例如列表 a=[1,2]，访问 a[5] 时就会出现索引越界。
+
+题目：第114题  第9章 异常处理：缩进错误对应的异常是？
+选项A：IndentationError
+选项B：MemoryError
+选项C：KeyError
+选项D：IOError
+答案：A
+解析：Python 依靠缩进表示代码块。如果缩进层级不正确，就可能产生 IndentationError。
+
+题目：第115题  第9章 异常处理：除数为 0 会引发什么异常？
+选项A：ZeroDivisionError
+选项B：NameError
+选项C：AttributeError
+选项D：ImportError
+答案：A
+解析：当执行 1/0、10//0 或 10%0 这类除数为 0 的运算时，会引发 ZeroDivisionError。
+
+题目：第116题  第9章 异常处理：try...except 的主要作用是？
+选项A：捕获并处理异常
+选项B：定义类
+选项C：导入模块
+选项D：格式化字符串
+答案：A
+解析：try...except 用于异常处理。try 代码块中放可能出错的代码，except 中放出现异常后的处理代码。基本语法为 try:
+    block1
+except ExceptionName as alias:
+    block2。
+
+题目：第117题  第9章 异常处理：finally 代码块的特点是？
+选项A：只有没有异常才执行
+选项B：通常无论是否异常都会执行
+选项C：只在语法错误时执行
+选项D：只能写 print
+答案：B
+解析：finally 中通常放任何情况下都需要执行的代码，如关闭文件、释放资源。try...except...finally 比 try...except 多了最终执行部分。
+
+题目：第118题  第9章 异常处理：raise 语句的作用是？
+选项A：主动抛出异常
+选项B：捕获异常
+选项C：忽略异常
+选项D：删除异常
+答案：A
+解析：raise 用于主动抛出异常，语法为 raise [ExceptionName[(reason)]]。如果不想在当前函数处理异常，可以用 raise 把异常继续抛出。
+
+题目：第119题  第9章 异常处理：assert expression 的执行规则是？
+选项A：表达式为真则抛出异常
+选项B：表达式为假则抛出 AssertionError
+选项C：表达式为假则什么也不做
+选项D：只能用于循环
+答案：B
+解析：assert 用于调试程序，语法为 assert expression [, reason]。当 expression 为 True 时不做事；为 False 时抛出 AssertionError，可附带 reason 说明。
+
+题目：第120题  第9章 异常处理：TypeError 通常表示什么？
+选项A：类型不合适
+选项B：内存不足
+选项C：模块不存在
+选项D：键不存在
+答案：A
+解析：TypeError 表示类型不合适，例如把字符串和整数直接相加：'1' + 2，就会因为类型不匹配而报错。
+
+题目：第121题  第9章 异常处理：KeyError 通常与哪种操作有关？
+选项A：访问不存在的字典键
+选项B：列表索引越界
+选项C：除以 0
+选项D：缩进错误
+答案：A
+解析：KeyError 通常在请求不存在的字典关键字时引发。例如 d={'a':1}，访问 d['b'] 会引发 KeyError。
+
+题目：第122题  第10章 文件：打开或创建文件常用的内置函数是？
+选项A：open()
+选项B：read()
+选项C：write()
+选项D：rename()
+答案：A
+解析：Python 使用 open() 打开或创建文件，语法为 file = open(filename[, mode[, buffering]])。返回值是文件对象。
+
+题目：第123题  第10章 文件：open() 的 mode 参数默认值通常表示什么？
+选项A：只读模式 r
+选项B：写入模式 w
+选项C：追加模式 a
+选项D：二进制模式 b
+答案：A
+解析：open() 的 mode 是可选参数，用于指定文件打开模式，默认是只读模式 r。读取不存在的文件时可能出现文件不存在错误。
+
+题目：第124题  第10章 文件：关闭文件对象的方法是？
+选项A：file.close()
+选项B：file.end()
+选项C：close(file)
+选项D：file.stop()
+答案：A
+解析：关闭文件应使用文件对象的 close() 方法，语法为 file.close()。及时关闭文件可以释放系统资源，也能确保写入内容被保存。
+
+题目：第125题  第10章 文件：写入文件内容的方法是？
+选项A：file.write(string)
+选项B：file.input(string)
+选项C：file.print(string)
+选项D：os.writefile(string)
+答案：A
+解析：文件对象提供 write() 方法写入字符串，语法为 file.write(string)。如果写入非字符串，通常需要先用 str() 转换。
+
+题目：第126题  第10章 文件：删除文件常用 os 模块中的哪个函数？
+选项A：os.remove(path)
+选项B：os.delete(path)
+选项C：os.clear(path)
+选项D：os.pop(path)
+答案：A
+解析：Python 内置函数中没有专门的删除文件函数，通常使用 os.remove(path) 删除指定路径的文件。使用前需要 import os。
+
+题目：第127题  第10章 文件：重命名文件或目录常用哪个函数？
+选项A：os.rename(src,dst)
+选项B：os.name(src,dst)
+选项C：file.rename(src,dst)
+选项D：rename.os(src,dst)
+答案：A
+解析：os.rename(src, dst) 用于重命名文件或目录。src 是原路径或原名称，dst 是新路径或新名称。
+
+题目：第128题  第10章 文件：os.stat() 返回对象中的 st_size 表示什么？
+选项A：文件大小，单位字节
+选项B：文件最后修改时间
+选项C：用户ID
+选项D：保护模式
+答案：A
+解析：stat() 返回的对象包含文件状态信息。st_size 表示文件大小，单位为字节；st_mtime 表示最后一次修改时间。
+
+题目：第129题  第10章 文件：os.stat() 返回对象中的 st_mtime 表示什么？
+选项A：最后一次修改时间
+选项B：文件大小
+选项C：设备名
+选项D：组ID
+答案：A
+解析：st_mtime 表示最后一次修改时间。文件状态属性可用于判断文件大小、时间、权限等信息。
+
+题目：第130题  第10章 文件：open('status.txt') 中如果文件在当前目录下，filename 可以怎样写？
+选项A：直接写文件名 status.txt
+选项B：必须写完整磁盘路径
+选项C：不能使用相对路径
+选项D：必须写 URL
+答案：A
+解析：如果要打开的文件和当前 Python 文件在同一目录，可以直接写文件名，如 open('status.txt')。否则需要指定相对路径或绝对路径。
+
+题目：第131题  第10章 文件：buffering 参数大于 1 时通常表示什么？
+选项A：缓冲区大小
+选项B：文件只读
+选项C：关闭文件
+选项D：文件编码
+答案：A
+解析：open() 中 buffering 用于指定缓冲模式。0 表示不缓存，1 表示缓存，如果大于 1，一般表示缓冲区大小。
+
+题目：第132题  第11章 数据库：获取数据库连接对象通常使用哪个函数？
+选项A：connect()
+选项B：cursor()
+选项C：fetchall()
+选项D：rollback()
+答案：A
+解析：连接数据库通常使用 connect() 函数。不同数据库模块的 connect() 参数可能不同，常见参数包括 dsn、user、password、host、database 等。
+
+题目：第133题  第11章 数据库：连接对象的 commit() 方法用于什么？
+选项A：提交事务
+选项B：关闭游标
+选项C：获取一条记录
+选项D：执行SQL语句
+答案：A
+解析：commit() 用于提交事务，将之前的数据库修改操作正式保存。执行 INSERT、UPDATE、DELETE 后通常需要提交。
+
+题目：第134题  第11章 数据库：连接对象的 rollback() 方法用于什么？
+选项A：回滚事务
+选项B：提交事务
+选项C：创建表
+选项D：获取字段描述
+答案：A
+解析：rollback() 用于回滚事务，即撤销尚未提交的数据库修改。它常用于出现错误时恢复到之前状态。
+
+题目：第135题  第11章 数据库：连接对象的 cursor() 方法用于什么？
+选项A：获取游标对象
+选项B：关闭数据库
+选项C：提交事务
+选项D：删除数据库
+答案：A
+解析：通过连接对象的 cursor() 方法可以获取游标对象。游标对象用于执行 SQL、调用存储过程和获取查询结果。
+
+题目：第136题  第11章 数据库：游标对象 execute(operation[, parameters]) 的作用是？
+选项A：执行数据库操作或SQL语句
+选项B：关闭数据库连接
+选项C：提交事务
+选项D：回滚事务
+答案：A
+解析：execute() 是游标对象常用方法，用于执行 SQL 语句或数据库命令。operation 是 SQL 语句，parameters 是可选参数。
+
+题目：第137题  第11章 数据库：executemany(operation, seq_of_params) 适合什么场景？
+选项A：批量执行操作
+选项B：只获取一条记录
+选项C：关闭游标
+选项D：查看字段类型
+答案：A
+解析：executemany() 用于批量操作，例如批量插入或更新多条记录。operation 是 SQL 语句，seq_of_params 是参数序列。
+
+题目：第138题  第11章 数据库：fetchone() 的作用是？
+选项A：获取查询结果集中的下一条记录
+选项B：获取所有记录
+选项C：提交事务
+选项D：批量插入
+答案：A
+解析：fetchone() 用于从查询结果集中获取下一条记录。若想获取全部记录，可以使用 fetchall()。
+
+题目：第139题  第11章 数据库：fetchmany(size) 的作用是？
+选项A：获取指定数量的记录
+选项B：获取所有记录
+选项C：删除指定记录
+选项D：关闭连接
+答案：A
+解析：fetchmany(size) 用于从结果集中获取指定数量的记录。size 参数表示希望获取的条数。
+
+题目：第140题  第11章 数据库：fetchall() 的作用是？
+选项A：获取结果集的所有记录
+选项B：只获取第一条记录
+选项C：回滚事务
+选项D：创建连接
+答案：A
+解析：fetchall() 用于获取查询结果集中的全部记录。数据量很大时一次性 fetchall() 可能占用较多内存。
+
+题目：第141题  第11章 数据库：SQL 中新增数据常用哪种语句？
+选项A：INSERT INTO ... VALUES ...
+选项B：SELECT ... FROM ...
+选项C：UPDATE ... SET ...
+选项D：DELETE FROM ...
+答案：A
+解析：新增数据常用 INSERT INTO 表名(字段1, 字段2, ...) VALUES(值1, 值2, ...)。执行后通常需要 commit() 提交事务。
+
+题目：第142题  第11章 数据库：SQL 中查询数据常用哪种语句？
+选项A：SELECT 字段 FROM 表 WHERE 条件
+选项B：INSERT INTO 表 VALUES
+选项C：UPDATE 表 SET 字段=值
+选项D：DELETE FROM 表
+答案：A
+解析：查询数据使用 SELECT，例如 select 字段名1, 字段名2 from 表名 where 查询条件。查询结果可用 fetchone()、fetchmany()、fetchall() 获取。
+
+题目：第143题  第11章 数据库：SQL 中修改数据常用哪种语句？
+选项A：UPDATE 表名 SET 字段名=字段值 WHERE 查询条件
+选项B：DELETE FROM 表名 WHERE 条件
+选项C：SELECT 字段 FROM 表
+选项D：INSERT INTO 表名
+答案：A
+解析：修改数据使用 UPDATE 语句，格式为 update 表名 set 字段名 = 字段值 where 查询条件。WHERE 条件很重要，否则可能修改整张表。
+
+题目：第144题  第11章 数据库：SQL 中删除数据常用哪种语句？
+选项A：DELETE FROM 表名 WHERE 查询条件
+选项B：SELECT FROM 表名
+选项C：INSERT DELETE 表名
+选项D：UPDATE DELETE 表名
+答案：A
+解析：删除数据使用 DELETE FROM 表名 WHERE 查询条件。使用 DELETE 时要谨慎，缺少 WHERE 可能删除表中大量数据。
+
+题目：第145题  第11章 数据库：游标对象的 rowcount 属性通常表示什么？
+选项A：返回结果的行数统计信息
+选项B：数据库名称
+选项C：用户密码
+选项D：SQL语句文本
+答案：A
+解析：rowcount 是游标对象属性，用于表示结果行数统计信息，如 SELECT、UPDATE、CALLPROC 等操作影响或返回的行数。
+
+题目：第146题  第12章 GUI：Tkinter 的特点是什么？
+选项A：Python 标准 GUI 接口，轻量跨平台
+选项B：只能用于数据库
+选项C：只能用于爬虫
+选项D：只能播放音频
+答案：A
+解析：Tkinter 是 Tk 图形用户界面工具包的标准 Python 接口，常用于创建轻量级跨平台 GUI 程序。
+
+题目：第147题  第12章 GUI：wx.Frame 主要表示什么？
+选项A：框架窗口
+选项B：按钮控件
+选项C：文本输入框
+选项D：数据库连接
+答案：A
+解析：wx.Frame 是 wxPython 中的框架窗口类，常用于创建顶级窗口。构造器中 parent 为父窗口，title 为窗口标题，size 为窗口尺寸。
+
+题目：第148题  第12章 GUI：wx.Frame(parent, id=-1, title='') 中 parent 为 None 通常表示什么？
+选项A：顶级窗口
+选项B：按钮没有文字
+选项C：窗口只读
+选项D：自动关闭窗口
+答案：A
+解析：wx.Frame 的 parent 表示父窗口。如果创建顶级窗口，parent 通常设为 None。
+
+题目：第149题  第12章 GUI：wx.Frame 中 title 参数表示什么？
+选项A：窗口标题
+选项B：窗口大小
+选项C：窗口位置
+选项D：控件名称
+答案：A
+解析：title 用于指定窗口标题，即显示在窗口标题栏中的文字。
+
+题目：第150题  第12章 GUI：wx.StaticText 类通常用于什么？
+选项A：显示静态文本
+选项B：输入密码
+选项C：执行SQL
+选项D：播放音频
+答案：A
+解析：wx.StaticText 是静态文本控件，用于在界面上显示不可编辑的文本内容。构造函数中 label 表示显示的文字。
+
+题目：第151题  第12章 GUI：wx.StaticText 的 label 参数表示什么？
+选项A：显示在控件中的文本内容
+选项B：窗口位置
+选项C：父窗口大小
+选项D：事件名称
+答案：A
+解析：label 是显示在静态控件中的文本内容。例如 wx.StaticText(parent, id, label='姓名') 会显示“姓名”。
+
+题目：第152题  第12章 GUI：wx.TextCtrl 通常用于什么？
+选项A：文本输入控件
+选项B：按钮控件
+选项C：窗口框架
+选项D：网格布局
+答案：A
+解析：wx.TextCtrl 是输入文本类，可用于让用户输入或显示文本。value 参数表示初始文本，style 可控制对齐、密码显示、只读等样式。
+
+题目：第153题  第12章 GUI：wx.TE_PASSWORD 样式的作用是？
+选项A：以星号代替显示输入文本
+选项B：文本居中
+选项C：文本只读
+选项D：按回车触发事件
+答案：A
+解析：wx.TE_PASSWORD 用于密码输入框，不显示实际键入的文本，而是以星号等形式代替显示。
+
+题目：第154题  第12章 GUI：wx.TE_READONLY 样式的作用是？
+选项A：文本控件只读，用户不能修改
+选项B：文本右对齐
+选项C：文本居中
+选项D：处理Tab键
+答案：A
+解析：wx.TE_READONLY 表示文本控件为只读，用户不能修改其中的文本，适合显示结果或说明。
+
+题目：第155题  第12章 GUI：wx.Button 的 label 参数表示什么？
+选项A：按钮上显示的文本
+选项B：按钮父窗口
+选项C：按钮大小
+选项D：按钮验证器
+答案：A
+解析：wx.Button 的参数与 wx.TextCtrl 类似，其中 label 表示显示在按钮上的文字。
+
+题目：第156题  第12章 GUI：BoxSizer 的布局特点是？
+选项A：在水平或垂直线上布局窗口部件
+选项B：只用于数据库表格
+选项C：只用于网页路由
+选项D：只用于音频播放
+答案：A
+解析：BoxSizer 用于在一条水平或垂直线上安排窗口部件，尺寸改变时较灵活，常用于嵌套布局。
+
+题目：第157题  第12章 GUI：GridSizer 适合什么布局？
+选项A：规则网格中放置尺寸相同的控件
+选项B：密码输入
+选项C：窗口标题设置
+选项D：文件删除
+答案：A
+解析：GridSizer 是基础网格布局，适合将尺寸相同的窗口部件整齐放入规则网格中。
+
+题目：第158题  第13章 Pygame：pygame.display 模块主要用于什么？
+选项A：访问显示设备
+选项B：管理数据库
+选项C：解析URL
+选项D：执行SQL
+答案：A
+解析：pygame.display 用于访问显示设备，包括初始化显示模块、创建显示界面、更新屏幕内容等。
+
+题目：第159题  第13章 Pygame：pygame.event 模块的作用是？
+选项A：管理事件
+选项B：加载图片
+选项C：播放视频
+选项D：处理数据库事务
+答案：A
+解析：pygame.event 用于管理事件，如键盘事件、鼠标事件、窗口关闭事件等。游戏循环中常用它读取用户操作。
+
+题目：第160题  第13章 Pygame：pygame.image 模块的作用是？
+选项A：加载和存储图片
+选项B：管理时间
+选项C：读取键盘
+选项D：访问光驱
+答案：A
+解析：pygame.image 用于加载和保存图片资源，常在游戏中加载角色、背景、道具等图像。
+
+题目：第161题  第13章 Pygame：pygame.key 模块主要用于什么？
+选项A：读取键盘按键
+选项B：加载光标
+选项C：管理矩形区域
+选项D：绘制图形
+答案：A
+解析：pygame.key 用于读取键盘按键状态或相关输入，常用于控制角色移动。
+
+题目：第162题  第13章 Pygame：pygame.mouse 模块主要用于什么？
+选项A：鼠标相关操作
+选项B：键盘按键
+选项C：声音播放
+选项D：URL解析
+答案：A
+解析：pygame.mouse 用于处理鼠标位置、按键等相关功能。
+
+题目：第163题  第13章 Pygame：pygame.mixer 模块主要用于什么？
+选项A：声音
+选项B：字体
+选项C：图像缩放
+选项D：矩形碰撞
+答案：A
+解析：pygame.mixer 主要用于声音相关功能，例如播放音效。Pygame 中还有 pygame.music 用于播放音频。
+
+题目：第164题  第13章 Pygame：pygame.time 模块主要管理什么？
+选项A：时间和帧信息
+选项B：URL解析
+选项C：数据库连接
+选项D：静态文本
+答案：A
+解析：pygame.time 用于管理时间、延迟、帧率等内容，在游戏循环中常用来控制刷新速度。
+
+题目：第165题  第13章 Pygame：pygame.transform 模块主要用于什么？
+选项A：缩放和移动图像
+选项B：提交事务
+选项C：捕获异常
+选项D：编码字符串
+答案：A
+解析：pygame.transform 用于对图像进行缩放、旋转等变换处理，适合调整游戏素材大小或方向。
+
+题目：第166题  第13章 Pygame：pygame.display.set_mode 的作用是？
+选项A：初始化一个准备显示的界面
+选项B：结束display模块
+选项C：获取鼠标位置
+选项D：加载字体
+答案：A
+解析：display.set_mode 用于创建显示窗口或屏幕 Surface，是 Pygame 初始化显示界面的常用方法。
+
+题目：第167题  第13章 Pygame：pygame.display.flip 的作用是？
+选项A：更新整个待显示的 Surface 到屏幕上
+选项B：读取键盘
+选项C：关闭数据库
+选项D：解析HTML
+答案：A
+解析：display.flip 用于将整个待显示的 Surface 更新到屏幕上。display.update 也可更新内容，若没有参数时功能与 flip 类似。
+
+题目：第168题  第13章 Pygame：pygame.display.update 在没有参数时与哪个方法功能相似？
+选项A：flip
+选项B：quit
+选项C：init
+选项D：get_init
+答案：A
+解析：pygame.display.update 用于更新部分内容显示到屏幕上；如果没有参数，则与 flip 功能相同，即更新整个显示内容。
+
+题目：第169题  第13章 Pygame：pygame.Surface.blit 的作用是？
+选项A：将一个图像画到另一个图像上
+选项B：填充颜色
+选项C：获取矩形区域
+选项D：转换像素格式
+答案：A
+解析：Surface.blit 用于把一个图像绘制到另一个图像上，例如把角色图像画到屏幕 Surface 上。
+
+题目：第170题  第13章 Pygame：pygame.Surface.fill 的作用是？
+选项A：使用颜色填充 Surface
+选项B：获取矩形区域
+选项C：加载图片
+选项D：读取键盘
+答案：A
+解析：Surface.fill 用于用指定颜色填充整个 Surface，常用于清屏或设置背景颜色。
+
+题目：第171题  第13章 Pygame：pygame.Surface.get_rect 的作用是？
+选项A：获取 Surface 的矩形区域
+选项B：播放音频
+选项C：访问光驱
+选项D：调用存储过程
+答案：A
+解析：get_rect() 会返回 Surface 对应的矩形区域对象，常用于定位、碰撞检测和布局。
+
+题目：第172题  第14章 网络爬虫：urllib.request 子模块主要用于什么？
+选项A：打开URL的方法和类
+选项B：解析robots.txt
+选项C：只处理GUI按钮
+选项D：播放音频
+答案：A
+解析：urllib.request 定义了打开 URL，尤其是 HTTP URL 的方法和类，也涉及身份验证、重定向、cookie 等。
+
+题目：第173题  第14章 网络爬虫：urllib.error 子模块主要包含什么？
+选项A：异常类
+选项B：GUI控件
+选项C：游戏图像
+选项D：数据库游标
+答案：A
+解析：urllib.error 主要包含异常类，基本异常类是 URLError，常用于处理网络请求错误。
+
+题目：第174题  第14章 网络爬虫：urllib.parse 子模块的主要功能是？
+选项A：URL解析和URL引用
+选项B：打开光驱
+选项C：显示窗口
+选项D：提交事务
+答案：A
+解析：urllib.parse 的功能主要分为 URL 解析和 URL 引用，适合处理网址中的参数、路径等部分。
+
+题目：第175题  第14章 网络爬虫：urllib.robotparser 子模块用于什么？
+选项A：解析 robots.txt 文件
+选项B：绘制游戏图形
+选项C：操作数据库
+选项D：格式化字符串
+答案：A
+解析：urllib.robotparser 用于解析 robots.txt 文件。robots.txt 常用于说明网站对爬虫访问范围的规则。
+
+题目：第176题  第14章 网络爬虫：Scrapy 框架的特点是？
+选项A：成熟、轻巧、高效爬取并提取结构化数据
+选项B：只能做桌面GUI
+选项C：只能处理音频
+选项D：只能写数据库SQL
+答案：A
+解析：Scrapy 是成熟的 Python 爬虫框架，便于高效率爬取 Web 页面并从页面中提取结构化数据。
+
+题目：第177题  第14章 网络爬虫：Crawley 是什么？
+选项A：Python开发的爬虫框架
+选项B：Python内置GUI模块
+选项C：数据库连接对象
+选项D：Pygame声音模块
+答案：A
+解析：Crawley 也是 Python 开发出的爬虫框架，目标是改变人们从互联网中提取数据的方式。
+
+题目：第178题  第14章 网络爬虫：PySpider 相比 Scrapy 在文中被描述为？
+选项A：新秀框架
+选项B：Python解释器
+选项C：数据库字段类型
+选项D：正则限定符
+答案：A
+解析：文中提到相对于 Scrapy，PySpider 还是新秀。它采用 Python 编写，支持分布式架构、多种数据库后端和强大的 WebUI。
+
+题目：第179题  第14章 网络爬虫：PySpider 的 WebUI 支持不包括哪一项？
+选项A：脚本编辑器
+选项B：任务监视器
+选项C：项目管理器
+选项D：本地显卡驱动安装器
+答案：D
+解析：PySpider 的 WebUI 支持脚本编辑器、任务监视器、项目管理器和结果查看器等，但不包括本地显卡驱动安装器。
+
+题目：第180题  第14章 网络爬虫：爬虫框架主要解决的问题是？
+选项A：从网页中抓取并提取数据
+选项B：只在控制台打印数字
+选项C：只进行本地文件重命名
+选项D：只进行列表排序
+答案：A
+解析：网络爬虫框架的核心用途是请求网页、抓取页面内容，并从中提取有用数据。Scrapy、Crawley、PySpider 都属于爬虫相关框架。
+
+题目：第181题  第14章 网络爬虫：URL 解析更接近 urllib 中哪个子模块的职责？
+选项A：urllib.parse
+选项B：urllib.error
+选项C：urllib.robotparser
+选项D：urllib.cdrom
+答案：A
+解析：urllib.parse 负责 URL 解析和 URL 引用；urllib.error 负责异常类；urllib.robotparser 负责 robots.txt 解析。
+
+题目：第182题  综合题：若要接收用户输入的年龄并转换为整数，较合理的写法是？
+选项A：age = int(input('请输入年龄：'))
+选项B：age = input(int('请输入年龄：'))
+选项C：age = str(input('请输入年龄：'))
+选项D：age = print(input())
+答案：A
+解析：input() 默认返回字符串，因此要进行整数运算时需要用 int() 转换。常见写法为 age = int(input('请输入年龄：'))。如果用户输入不能转换为整数，会产生 ValueError。
+
+题目：第183题  综合题：要判断变量 n 是否同时大于 0 且小于 100，应使用？
+选项A：n > 0 and n < 100
+选项B：n > 0 or n < 100
+选项C：not n > 0 < 100
+选项D：n = 0 and 100
+答案：A
+解析：and 表示逻辑与，两个条件都成立时结果才为 True。n > 0 and n < 100 表示 n 同时满足大于 0、小于 100。
+
+题目：第184题  综合题：下列哪种写法可以遍历列表并同时获得索引和值？
+选项A：for index, item in enumerate(listname):
+选项B：for item in index(listname):
+选项C：for enumerate in listname(index):
+选项D：for index item listname:
+答案：A
+解析：enumerate() 会把序列组合为索引和值的形式，常用于 for 循环中：for index, item in enumerate(listname):。index 是索引，item 是元素值。
+
+题目：第185题  综合题：要把列表 ['2026','05','09'] 合并成 '2026-05-09'，应使用？
+选项A：'-'.join(['2026','05','09'])
+选项B：['2026','05','09'].join('-')
+选项C：split('-')
+选项D：'-'.split(['2026','05','09'])
+答案：A
+解析：join() 的语法是 separator.join(iterable)，分隔符在前，待合并的可迭代字符串序列在括号中。'-'.join(['2026','05','09']) 得到 '2026-05-09'。
+
+题目：第186题  综合题：想把函数写成 def add(a, b): return a+b，对应的调用方式是？
+选项A：add(2,3)
+选项B：add[2,3]
+选项C：def add(2,3)
+选项D：return add(2,3)
+答案：A
+解析：函数调用使用函数名加圆括号，实参放在括号内。add(2,3) 会把 2 传给 a，3 传给 b，return a+b 返回 5。
+
+题目：第187题  综合题：下列哪项最适合用 try...except 处理？
+选项A：可能因为用户输入不是数字而转换失败
+选项B：定义一个普通列表
+选项C：声明一个字符串
+选项D：写一个没有条件的 print
+答案：A
+解析：try...except 用于捕获可能出现的运行时异常。例如 int(input()) 在用户输入非数字时可能产生 ValueError，可以用 except ValueError 处理。
+
+题目：第188题  综合题：要读取文件前通常先要做什么？
+选项A：使用 open() 打开文件并获得文件对象
+选项B：使用 del 删除文件
+选项C：使用 raise 抛出异常
+选项D：使用 sorted 排序文件名
+答案：A
+解析：Python 操作文件通常先用 open(filename, mode) 打开文件，获得文件对象后才能 read()、write() 或 close()。
+
+题目：第189题  综合题：使用 os.remove(path) 前通常需要先写什么？
+选项A：import os
+选项B：import remove
+选项C：from file import os
+选项D：def os
+答案：A
+解析：os.remove() 属于 os 模块，使用前需要导入 os 模块，即 import os。然后可调用 os.remove(path) 删除文件。
+
+题目：第190题  综合题：SQL 中 SELECT 之后通常配合哪类游标方法获取结果？
+选项A：fetchone/fetchmany/fetchall
+选项B：commit/rollback
+选项C：append/extend
+选项D：encode/decode
+答案：A
+解析：SELECT 查询产生结果集，游标对象可用 fetchone() 获取下一条、fetchmany(size) 获取指定数量、fetchall() 获取全部记录。
+
+题目：第191题  综合题：wx.TextCtrl 中输入密码时，应优先考虑哪个样式？
+选项A：wx.TE_PASSWORD
+选项B：wx.TE_READONLY
+选项C：wx.TE_RIGHT
+选项D：wx.TE_PROCESS_TAB
+答案：A
+解析：wx.TE_PASSWORD 会让控件不显示实际输入字符，而以星号等代替，适合密码输入场景。
+
+题目：第192题  综合题：Pygame 游戏主循环中，经常需要处理用户输入事件，应关注哪个模块？
+选项A：pygame.event
+选项B：pygame.cdrom
+选项C：pygame.overlay
+选项D：pygame.sndarray
+答案：A
+解析：pygame.event 用于管理事件，游戏中键盘、鼠标、关闭窗口等操作通常都从事件队列中读取并处理。
+
+题目：第193题  综合题：要分析网页地址中的查询参数，更接近哪个模块？
+选项A：urllib.parse
+选项B：urllib.request
+选项C：urllib.error
+选项D：urllib.robotparser
+答案：A
+解析：URL 的拆分、解析和引用处理属于 urllib.parse 的职责。urllib.request 更偏向打开 URL，urllib.error 更偏向异常处理。
+
+题目：第194题  综合题：表达式 [x for x in range(6) if x % 2 == 0] 的结果是？
+选项A：[0, 2, 4]
+选项B：[1, 3, 5]
+选项C：[0,1,2,3,4,5]
+选项D：[2,4,6]
+答案：A
+解析：这是带条件的列表推导式，语法为 [Expression for var in list if condition]。range(6) 产生 0 到 5，其中能被 2 整除的是 0、2、4。
+
+题目：第195题  综合题：'Python'[1:4] 的结果是？
+选项A：'Pyt'
+选项B：'yth'
+选项C：'tho'
+选项D：'Python'
+答案：B
+解析：切片 start:end 包含 start 位置，不包含 end 位置。'Python' 的索引 1、2、3 分别是 y、t、h，所以结果为 'yth'。
+
+题目：第196题  综合题：若 a=[3,1,2]，执行 b=sorted(a) 后，a 的值通常是？
+选项A：[3,1,2]
+选项B：[1,2,3]
+选项C：[]
+选项D：None
+答案：A
+解析：sorted(a) 返回排序后的新列表，不会改变原列表 a 的顺序。因此 b 是 [1,2,3]，而 a 仍为 [3,1,2]。
+
+题目：第197题  综合题：若 a=[3,1,2]，执行 a.sort() 后，a 的值是？
+选项A：[3,1,2]
+选项B：[1,2,3]
+选项C：None
+选项D：[2,1,3]
+答案：B
+解析：列表对象的 sort() 方法会直接修改原列表，默认升序排序。因此 a.sort() 后，a 变成 [1,2,3]。
+
+题目：第198题  综合题：要主动提示“参数不能小于0”的异常，较合适的是？
+选项A：raise ValueError('参数不能小于0')
+选项B：assert True
+选项C：break ValueError
+选项D：continue '参数不能小于0'
+答案：A
+解析：raise 可以主动抛出异常。ValueError 常用于表示传入的值不合适，语法可写为 raise ValueError('参数不能小于0')。
+
+题目：第199题  综合题：如果类 Student 中定义 def say(self):，实例 s 调用方法应写成？
+选项A：s.say()
+选项B：Student.say
+选项C：say.s()
+选项D：def s.say()
+答案：A
+解析：实例方法通过实例名和点操作符调用。虽然定义时有 self 参数，但调用 s.say() 时 Python 会自动把实例 s 传给 self。
+
+题目：第200题  综合题：要把字符串 '你好' 编码为 UTF-8 字节数据，应使用？
+选项A：'你好'.encode('utf-8')
+选项B：'你好'.decode('utf-8')
+选项C：encode('你好')
+选项D：bytes.decode('你好')
+答案：A
+解析：encode() 是字符串方法，用于把 str 转为 bytes。语法为 str.encode(encoding='utf-8')。decode() 则用于把 bytes 解码回 str。
